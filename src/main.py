@@ -1,7 +1,10 @@
 import json
 import os
 
-from moviepy.editor import VideoFileClip
+# Set the path to your FFmpeg binary
+ffmpeg_bin = r"D:\Tools\ffmpeg\ffmpeg\bin\ffmpeg.exe"
+os.environ["FFMPEG_BINARY"] = ffmpeg_bin
+from moviepy import VideoFileClip
 
 
 class MediaProcessor:
@@ -50,7 +53,7 @@ class MediaProcessor:
 
 if __name__ == "__main__":
     # Path to JSON configuration file
-    config_file_path = r"D:\youtube\youtube_projects\config.json"
+    config_file_path = r"src\files.json"
 
     # Create an instance of the class
     processor = MediaProcessor(config_file_path)
