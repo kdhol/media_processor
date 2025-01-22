@@ -1,0 +1,57 @@
+{
+  "folders": [
+    {
+      "path": "./.."
+    }
+  ],
+  "settings": {
+    // Python interpreter settings
+    //"python.defaultInterpreterPath": "C:/Tools/Python3/python.exe",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    // Linting settings using extensions
+    "python.linting.enabled": false, // Disable legacy linting settings
+    "pylint.enabled": true, // Use the Pylint extension for PEP 8 compliance
+    "flake8.enabled": false, // Disable Flake8 if not using it
+    "mypy.enabled": true, // Use the Mypy extension for type checking
+    "python.testing.pytestArgs": [
+      "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // Formatting options
+    "editor.formatOnSave": true,
+    //"black.formatting.enabled": true,  // Use Black formatter for consistent code style
+    // Linting on save
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll": "explicit" // Apply fixes for PEP 8 issues on save
+    },
+    // Use isort to sort imports automatically
+    "isort.args": [
+      "--profile",
+      "black"
+    ], // Use Isort extension directly
+    // Disable unnecessary warning squiggles
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.typeCheckingMode": "basic",
+    // General workspace settings
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    // Maximum line length setting
+    "editor.rulers": [
+      180
+    ], // Set to 80 characters; adjust to your desired limit
+    "black.lineLength": 120,
+    "cSpell.words": [
+      "commerz"
+    ],
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    }, // Specify line length for Black
+  },
+  "extensions": {
+    "recommendations": []
+  }
+}
