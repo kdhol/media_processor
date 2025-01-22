@@ -2,6 +2,7 @@
     "ffmpeg_bin": "D:\\Tools\\ffmpeg\\ffmpeg\\bin\\ffmpeg.exe",
     "input_file": "D:\\youtube\\youtube_projects\\python_logo_downloader\\videos\\PXL_20250121_211351428.mp4",
     "audio_output_file": "D:\\youtube\\youtube_projects\\python_logo_downloader\\videos\\PXL_20250121_211351428_audio.mp3",
-    "video_output_file": "D:\\youtube\\youtube_projects\\python_logo_downloader\\videos\\PXL_20250121_211351428_reduced.mp4",
+    "video_output_file": "D:\\youtube\\youtube_projects\\python_logo_downloader\\videos\\py_PXL_20250121_211351428.mp4",
+    "video_output_reduced": "D:\\youtube\\youtube_projects\\python_logo_downloader\\videos\\py_PXL_20250121_211351428_reduced.mp4",
     "target_resolution": [640, 360]
 }
